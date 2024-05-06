@@ -1,40 +1,33 @@
 
-// $('.menu-icon').on('click', function(){
-//     $(this).toggleClass('active');
-//     $('.slidebar').slideToggle();
-//     // $($(this).attr("for")).show();
-//       $(".icon").toggle()
-//       $("#dashboard").show()
-//   })
 
-  // $(".slidebar").show();
+$(".display>div").hide();
+$("#dashboard").show();
 
 
-  // $(".menu-icon").on("click",function(){
-  //     $(".slidebar").toggle("click",function(){
-  //       $(".main-section").css("width","100%")
-  //     });
-  //     ($(this).attr("for")).show();
-  //     })
- 
+$("button").on("click",function(){
+    $(".display>div").hide();
+    $($(this).attr("for")).show();
+})
+var visible = false;
 
-  $(".slider-icon").on("click",function(){
-    $(".sidebar").toggle("click",function(){
-      // $(".contain").css("width","100%")
-      $(".contain>div").css("width","100%")
-    
-    })    
+function sideCustomization() {
+  visible = !visible;
+  $("#sidebar").toggle(10, function () {
+    if (visible) {
+      $("#content,#content>div,.slider-icon").css("width", "100%");
+    } else {
+      $("#content,#content>div,.slider-icon").css("width", "100%");
+    }
+  });
+}
+
+$(".slider-icon").on("click",function(){
+    $(".sidebar").toggle();
+    sideCustomization();
 })
 
-$(".link").on("click",function(){
-  $(".sidebar").hide("click",function(){
-    // $(".contain").css("width","100%")
-    // $(".contain>div").css("width","100%")
-  
-  })    
+$("button").on("click",function(){
+    $("#sidebar").hide()
+    $("#content").css("width","100%")
+    $(".slider-icon").css("width","100%")
 })
-
-//$(".sidebar").on("click",function(){
- // $(".sidebar").hide()
-//})
-
