@@ -19,7 +19,7 @@ function sideCustomization() {
       $("#content,#content>div,.slider-icon").css("width", "100%");
     }
   });
-}
+} 
 
 $(".slider-icon").on("click",function(){
     $(".sidebar").toggle();

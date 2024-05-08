@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div id="main">
         <!-- sidebar -->
         <div id="sidebar">
-            <div class="admin-panel"> <i class="fa-brands fa-bootstrap start-icon"></i>Admin panel</div>
-            <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon"> </i>Dashboard</button>
+            <div class="admin-panel"><img
+                    src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
+                    alt="" srcset=""></div>
+            <!-- <div class="admin-panel"> <i class="fa-brands fa-bootstrap start-icon"></i>Admin panel</div> -->
+            <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon">
+                </i>Dashboard</button>
             <button class="sidebarBtns" for="#forms"> <i class="fa-solid fa-file side-icon"></i>Forms</button>
             <button class="sidebarBtns" for="#table"> <i class="fa-solid fa-table side-icon"></i>Table</button>
-            <button class="sidebarBtns" for="#chart"> <i class="fa-solid fa-chart-simple icon side-icon "></i>Chart</button>
+            <button class="sidebarBtns" for="#chart"> <i
+                    class="fa-solid fa-chart-simple icon side-icon "></i>Chart</button>
             <button class="sidebarBtns" for="#icons"><i class="fa-solid fa-icons side-icon "></i>Icons</button>
-            <button class="sidebarBtns" for="#elemengts"><i class="fa-brands fa-elementor side-icon"></i>UI Elemengts</button>
-            <button class="sidebarBtns" for="#autho"><i class="fa-solid fa-user-shield  side-icon"></i>Authentication</button>
+            <button class="sidebarBtns" for="#elemengts"><i class="fa-brands fa-elementor side-icon"></i>UI
+                Elemengts</button>
+            <button class="sidebarBtns" for="#autho"><i
+                    class="fa-solid fa-user-shield  side-icon"></i>Authentication</button>
             <button class="sidebarBtns" for="#pages"><i class="fa-solid fa-file side-icon"></i>Pages</button>
             <button class="sidebarBtns" for="#user"><i class="fa-solid fa-user side-icon"></i>User</button>
             <button class="sidebarBtns" for="#setting"><i class="fa-solid fa-gear side-icon"></i>Setting</button>
@@ -36,60 +49,139 @@
                     <div class="quick-link">
                         <i class="fa-solid fa-link"></i>
                         <span class="quick-name">Quick-Link</span>
-                
+                        <ul class="dropdown">
+                            <li><i class="fa-solid fa-list drd"></i> Access Loges</li>
+                            <li><i class="fa-solid fa-database drd"></i>Back ups</li>
+                            <li><i class="fa-solid fa-cloud-arrow-up drd"></i>Updets</li>
+                            <li><i class="fa-solid fa-user-shield drd"></i>Roles</li>
+                        </ul>
                     </div>
                     <div class="user-link">
                         <i class="fa-solid fa-user"></i>
                         <span class="user-name">Komal Patel</span>
-                
+                        <ul class="dropdown">
+                            <li><i class="fa-solid fa-address-card drd"></i>Profile</li>
+                            <li><i class="fa-solid fa-message drd"></i>Message</li>
+                            <li><i class="fa-solid fa-gear drd"></i>Setting</li>
+                            <li><i class="fa-solid fa-right-from-bracket drd"></i></i>Logout</li>
+                        </ul>
                     </div>
                 </div>
-           </div>
+            </div>
 
 
-        
 
-        <!-- content-display -->
 
-        <div class="display">
-            <div id="dashboard">
-                <h1>Dashboard</h1>
-            </div>
-            <div id="forms">
-                <h1>Forms</h1>
-            </div>
-            <div id="table">
-                <h1>Table</h1>
-            </div>
-            <div id="chart">
-                <h1>Chart</h1>
-            </div>
-            <div id="icons">
-                <h1>Icons</h1>
-            </div>
-            <div id="elemengts">
-                <h1>UI Elemengts</h1>
-            </div>
-            <div id="autho">
-                <h1>Authentication</h1>
+            <!-- content-display -->
+
+            <div class="display">
+                <div id="dashboard">
+                    <h1>Dashboard</h1>
+                </div>
+
+                <!-- forms start -->
+
+                <div id="forms">
+                    <h2>Forms</h2>
+
+                    <form action="">
+                        <h3>Basic Forms</h3>
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                        <label>Email</label>
+                        <input type="email" placeholder="Email Address" required>
+
+                        <label>Password</label>
+                        <input type="password" placeholder="Password">
+
+                        <button type="submit" class="form-btn">Submit</button>
+                    </form>
+                </div>
+                <!-- forms end -->
+
+
+
+                <!-- table strat -->
+                <div id="table">
+                    <h1>Table</h1>
+                    <table>
+                        <!-- <h3>Basic Table</h3> -->
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>User Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td> Mark</td>
+                                <td> Otto</td>
+                                <td> @mdo</td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- table end -->
+                <div id="chart">
+                    <h1>Chart</h1>
+                </div>
+                <div id="icons">
+                    <h1>Icons</h1>
+                </div>
+                <div id="elemengts">
+                    <h1>UI Elemengts</h1>
+                </div>
+                <div id="autho">
+                    <h1>Authentication</h1>
+                    <div class="login">
+                        <img src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
+                            alt="" srcset="">
+                        <input class="login-input" type="text" placeholder="Username" required>
+                        <input class="login-input" type="password" placeholder="Password">
+                        <input type="checkbox">
+                        <label for="">Remember me</label>
+
+                        <button type="submit" class="autho-btn">Login</button>    
+                    </div>
+               
             </div>
             <div id="pages">
                 <h1>Pages</h1>
             </div>
             <div id="user">
                 <h1>User</h1>
+                <img src="Screenshot_2.png" alt="">
             </div>
             <div id="setting">
                 <h1>Setting</h1>
             </div>
-         </div>
         </div>
+    </div>
     </div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
