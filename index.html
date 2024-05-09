@@ -20,21 +20,15 @@
     <div id="main">
         <!-- sidebar -->
         <div id="sidebar">
-            <div class="admin-panel"><img
-                    src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
-                    alt="" srcset=""></div>
+            <div class="admin-panel"><img src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png" alt="" srcset=""></div>
             <!-- <div class="admin-panel"> <i class="fa-brands fa-bootstrap start-icon"></i>Admin panel</div> -->
-            <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon">
-                </i>Dashboard</button>
+            <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon"> </i>Dashboard</button>
             <button class="sidebarBtns" for="#forms"> <i class="fa-solid fa-file side-icon"></i>Forms</button>
             <button class="sidebarBtns" for="#table"> <i class="fa-solid fa-table side-icon"></i>Table</button>
-            <button class="sidebarBtns" for="#chart"> <i
-                    class="fa-solid fa-chart-simple icon side-icon "></i>Chart</button>
-            <button class="sidebarBtns" for="#icons"><i class="fa-solid fa-icons side-icon "></i>Icons</button>
-            <button class="sidebarBtns" for="#elemengts"><i class="fa-brands fa-elementor side-icon"></i>UI
-                Elemengts</button>
-            <button class="sidebarBtns" for="#autho"><i
-                    class="fa-solid fa-user-shield  side-icon"></i>Authentication</button>
+            <button class="sidebarBtns" for="#chart"> <i class="fa-solid fa-chart-simple icon side-icon"></i>Chart</button>
+            <button class="sidebarBtns" for="#icons"><i class="fa-solid fa-icons side-icon"></i>Icons</button>
+            <button class="sidebarBtns" for="#elemengts"><i class="fa-brands fa-elementor side-icon"></i>UI Elemengts</button>
+            <button class="sidebarBtns" for="#autho"><i class="fa-solid fa-user-shield side-icon"></i>Authentication</button>
             <button class="sidebarBtns" for="#pages"><i class="fa-solid fa-file side-icon"></i>Pages</button>
             <button class="sidebarBtns" for="#user"><i class="fa-solid fa-user side-icon"></i>User</button>
             <button class="sidebarBtns" for="#setting"><i class="fa-solid fa-gear side-icon"></i>Setting</button>
@@ -77,6 +71,93 @@
             <div class="display">
                 <div id="dashboard">
                     <h1>Dashboard</h1>
+                    <div id="dashboard-box-1">
+                        <!-- 1 -->
+                        <div id="dash-1">
+                            <div id="dash-main">
+                                <div id="dash-2">
+                                    <p class="cart"><i class="fa fa-shopping-cart dash-icon" aria-hidden="true"></i> </p>
+                                </div>
+                                <div id="dash-3">
+                                    <p>New Order</p>
+                                    <span class="count">6267</span>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="foter"> <i class="fa-solid fa-arrow-rotate-right"></i> Update   Every   30 Mins </p>
+                        </div>
+                        <!-- 2 -->
+                        <div id="dash-1">
+                            <div id="dash-main">
+                                <div id="dash-2">
+                                    <p class="cart"><i class="fas fa-money-bill-alt  dash-icon" style="color: #46ec70;"></i> </p>
+                                </div>
+                                <div id="dash-3">
+                                    <p>Revenue</p>
+                                    <span class="count">180900</span>
+                                 
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="foter"> <i class="fa-solid fa-calendar"></i> In This Month </p>
+                        </div>
+                        <!-- 3 -->
+                        <div id="dash-1">
+                            <div id="dash-main">
+                                <div id="dash-2">
+                                    <p class="cart"><i class="fa-solid fa-eye  dash-icon" style="color: #7f00ff;"></i> </p>
+                                </div>
+                                <div id="dash-3">
+                                    <p> Page View</p>
+                                    <span class="count">28210</span>
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="foter"> <i class="fa-solid fa-stopwatch"></i> In Last 24 Hrs </p>
+                        </div>
+                        <!-- 4 -->
+                        <div id="dash-1">
+                            <div id="dash-main">
+                                <div id="dash-2">
+                                    <p class="view"> <i class="fa-solid fa-envelope  dash-icon"  style="color:orange;"></i> </p>
+                                </div>
+                                <div id="dash-3">
+                                    <p>Support Request</p>
+                                    <span class="count">75</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="foter"> <i class="fa-solid fa-envelope-open-text"></i> Active In The Last 7 Days </p>
+                        </div>
+                    </div>
+                    <!-- chart -->
+                <div id="dashboard-chart">
+                    <div id="chart-db"></div>
+                    <div id="chart-db-1"></div>
+                </div>
+
+                <!-- flag
+                    <div id="dash-content">
+                            <div id="heading">
+                                <h4>Top Visitors by Country</h4>
+                                <p id="sub-head">Your year long website traffic data</p>
+                            </div>
+                                <table class="dash-table">
+                                    <thead class="dash-thead">
+                                        <tr class="dash-tr">
+                                            <th class="dash-th">Country</th>
+                                            <th  class="dash-th">Unique Visitors</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="dash-flag"><i class="fa-solid fa-flag-usa"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                    </div> -->
                 </div>
 
                 <!-- forms start -->
@@ -95,6 +176,7 @@
 
                         <button type="submit" class="form-btn">Submit</button>
                     </form>
+            
                 </div>
                 <!-- forms end -->
 
@@ -144,36 +226,53 @@
                 </div>
                 <div id="icons">
                     <h1>Icons</h1>
+                    <div id="icon-ss">
+                        <div id="icon-1">
+                            <img src="Screenshot_1.png" alt="" srcset="">
+                        </div>
+
+                    </div>
                 </div>
                 <div id="elemengts">
                     <h1>UI Elemengts</h1>
+                    <img src="element.png" alt="" srcset="">
                 </div>
+
+
                 <div id="autho">
                     <h1>Authentication</h1>
                     <div class="login">
-                        <img src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
+                        <img class="login-img"
+                            src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
                             alt="" srcset="">
-                        <input class="login-input" type="text" placeholder="Username" required>
+                        <h3 class="login-heading">Sign in to your account</h3>
+                        <input class="login-input" type="email" placeholder="Email" required><br>
                         <input class="login-input" type="password" placeholder="Password">
-                        <input type="checkbox">
-                        <label for="">Remember me</label>
-
-                        <button type="submit" class="autho-btn">Login</button>    
+                        <div class="checkbox">
+                            <input class="login-cheackbox" type="checkbox" name="" id="">
+                            <label for="" id="remem1">remember me</label>
+                        </div>
+                        <button type="submit" class="autho-btn">Login</button> 
                     </div>
-               
-            </div>
-            <div id="pages">
-                <h1>Pages</h1>
-            </div>
-            <div id="user">
-                <h1>User</h1>
-                <img src="Screenshot_2.png" alt="">
-            </div>
-            <div id="setting">
-                <h1>Setting</h1>
+
+                </div>
+
+
+
+                <div id="pages">
+                    <h1>Pages</h1>
+                </div>
+                <div id="user">
+                    <h1>User</h1>
+                    <img src="Screenshot_2.png" alt="">
+
+                </div>
+                <div id="setting">
+                    <h1>Setting</h1>
+                    <img src="setting.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -181,6 +280,15 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+        integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="jquery.easing.js"></script>
+    <script src="./counter.js"></script>
     <script src="script.js"></script>
 </body>
 
