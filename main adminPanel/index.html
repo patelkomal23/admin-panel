@@ -42,7 +42,8 @@
                 <div class="links">
                     <div class="quick-link">
                         <i class="fa-solid fa-link"></i>
-                        <span class="quick-name">Quick-Link</span>
+                        <span class="quick-name">Quick-Link <i
+                            class="fa-solid fa-caret-down"></i></span>
                         <ul class="dropdown">
                             <li><i class="fa-solid fa-list drd"></i> Access Loges</li>
                             <li><i class="fa-solid fa-database drd"></i>Back ups</li>
@@ -52,7 +53,8 @@
                     </div>
                     <div class="user-link">
                         <i class="fa-solid fa-user"></i>
-                        <span class="user-name">Komal Patel</span>
+                        <span class="user-name">Komal Patel <i
+                            class="fa-solid fa-caret-down"></i></span>
                         <ul class="dropdown">
                             <li><i class="fa-solid fa-address-card drd"></i>Profile</li>
                             <li><i class="fa-solid fa-message drd"></i>Message</li>
@@ -110,8 +112,7 @@
                                 </div>
                                 <div id="dash-3">
                                     <p> Page View</p>
-                                    <span class="count">28210</span>
-                                    
+                                    <span class="count">28210</span>   
                                 </div>
                             </div>
                             <hr>
@@ -223,24 +224,36 @@
                 <!-- table end -->
                 <div id="chart">
                     <h1>Chart</h1>
+                        <br>
+                    <h5>Line chart</h5>
+                    <div class="chat-display"><canvas id="acquisitions1"></canvas></div>
+                    <h5>Bar chart</h5>
+                    <div class="chat-display"><canvas id="acquisitions"></canvas></div>
+                    <h5>Doughnut</h5>
+                    <div class="chat-display"><canvas id="acquisitions2"></canvas></div>
+                    <h5>Radar Chart</h5>
+                    <div class="chat-display"><canvas id="acquisitions3"></canvas></div>
                 </div>
                 <div id="icons">
                     <h1>Icons</h1>
-                    <div id="icon-ss">
-                        <div id="icon-1">
-                            <img src="Screenshot_1.png" alt="" srcset="">
-                        </div>
+                    <!-- <div id="icon-ss"> -->
+                        <!-- <div id="icon-1"> -->
+                            <img  class="side-img" src="Screenshot_1.png" alt="" srcset="">
+                        <!-- </div> -->
 
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <div id="elemengts">
                     <h1>UI Elemengts</h1>
-                    <img src="element.png" alt="" srcset="">
+                    <!-- <div class="ele-img"> -->
+                        <img src="element.png" alt="" srcset=""  class="side-img">
+
+                    <!-- </div> -->
                 </div>
 
 
                 <div id="autho">
-                    <h1>Authentication</h1>
+                    <!-- <h1>Authentication</h1> -->
                     <div class="login">
                         <img class="login-img"
                             src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
@@ -252,7 +265,8 @@
                             <input class="login-cheackbox" type="checkbox" name="" id="">
                             <label for="" id="remem1">remember me</label>
                         </div>
-                        <button type="submit" class="autho-btn">Login</button> 
+                        <button type="submit" class="autho-btn">Login</button> <br>
+                        <span id="Reset">Forget password? <a href="">Reset</a></span>
                     </div>
 
                 </div>
@@ -261,15 +275,16 @@
 
                 <div id="pages">
                     <h1>Pages</h1>
+                    <img src="page.png" alt="" class="side-img">
                 </div>
                 <div id="user">
                     <h1>User</h1>
-                    <img src="Screenshot_2.png" alt="">
+                    <img src="Screenshot_2.png" alt="" class="side-img">
 
                 </div>
                 <div id="setting">
                     <h1>Setting</h1>
-                    <img src="setting.png" alt="">
+                    <img src="setting.png" alt=""  class="side-img">
                 </div>
             </div>
         </div>
@@ -291,5 +306,4 @@
     <script src="./counter.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
