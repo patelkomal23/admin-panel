@@ -1,4 +1,5 @@
-var visible = false;
+
+ var visible = false;
 
 $(".display>div").hide();
 $("#dashboard").show();
@@ -14,17 +15,18 @@ function sideCustomization() {
   visible = !visible;
   $("#sidebar").toggle(10, function () {
     if (visible) {
-      $("#content").css("margin-left",0)
       $("#content,#content>div,.slider-icon").css("width", "100%");
+      $(".display>div").css("width","100%");
     } else {
       $("#sidebar").css("width","20%");
-      $("#content").css("margin-left",272)
       $("#content,#content>div,.slider-icon").css("width", "80%");
+      $(".display>div").css("width","125%")
+      $("#chart")
     }
   });
 } 
 
-$(".menu-icon").on("click",function(){
+$("#hember").on("click",function(){
     // $(".sidebar").toggle();
     sideCustomization();
 })
@@ -32,8 +34,8 @@ $(".menu-icon").on("click",function(){
 $("button").on("click",function(){
   visible = !visible;
     $("#sidebar").hide();
-    $("#content,#content>div,.slider-icon").css("width", "100%");
-    $("#content").css("margin-left",0)
+    $("#content,#content>div,.slider-icon,.display>div").css("width", "100%");
+    // $("#content").css("margin-left",0)
 })
 
 
@@ -272,3 +274,19 @@ chart.render();
     }
   );
 })();
+
+// celender
+
+var calendarInstance1 = new calendarJs( "calendar-1", {
+  manualEditingEnabled: true
+  // All your options can be set here
+} );
+
+// OR
+var calendarElement = document.getElementById( "calendar-1" );
+var calendarInstance2 = new calendarJs( calendarElement, {
+  manualEditingEnabled: true
+  // All your options can be set here
+} );
+
+// celender over
