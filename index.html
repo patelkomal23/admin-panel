@@ -10,316 +10,293 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./dist/calendar.js.css">
-
     <title>Admin Panel</title>
 </head>
 
-<body>
+    <body>
 
-    <div id="main">
+        <div id="main">
 
-        <!-- sidebar -->
-        <div id="sidebar">
-            <div id="logo">
-                <img src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
-                    alt="" srcset="">
+            <!-- sidebar -->
+            <div id="sidebar">
+                <div id="logo">
+                    <img src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
+                        alt="" srcset="">
+                </div>
+
+                <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon">
+                    </i><span id="name-display">Dashboard</span></button>
+                <button class="sidebarBtns" for="#forms"> <i class="fa-solid fa-file side-icon"></i><span
+                        id="name-display">Forms</span></button>
+                <button class="sidebarBtns" for="#table"> <i class="fa-solid fa-table side-icon"></i><span
+                        id="name-display">Table</span></button>
+                <button class="sidebarBtns" for="#chart"> <i class="fa-solid fa-chart-simple icon side-icon"></i><span
+                        id="name-display">Chart</span></button>
+                <button class="sidebarBtns" for="#icons"><i class="fa-solid fa-icons side-icon"></i><span
+                        id="name-display">Icons</span></button>
+                <button class="sidebarBtns" for="#calender"><i class="fa-solid fa-calendar-days  side-icon"></i><span
+                        id="name-display">Calender</span></button>
+                <button class="sidebarBtns" for="#autho"><i class="fa-solid fa-user-shield side-icon"></i><span
+                        id="name-display">Authentication</span></button>
+                <button class="sidebarBtns" for="#pages"><i class="fa-solid fa-file side-icon"></i><span
+                        id="name-display">Pages</span></button>
+                <button class="sidebarBtns" for="#user"><i class="fa-solid fa-user side-icon"></i><span
+                        id="name-display">User</span></button>
+                <button class="sidebarBtns" for="#setting"><i class="fa-solid fa-gear side-icon"></i><span
+                        id="name-display">Setting</span></button>
             </div>
+            <!-- sidebar over -->
 
-            <button class="sidebarBtns" for="#dashboard"><i class="fa-solid fa-house icon side-icon">
-                </i><span id="name-display">Dashboard</span></button>
-            <button class="sidebarBtns" for="#forms"> <i class="fa-solid fa-file side-icon"></i><span
-                    id="name-display">Forms</span></button>
-            <button class="sidebarBtns" for="#table"> <i class="fa-solid fa-table side-icon"></i><span
-                    id="name-display">Table</span></button>
-            <button class="sidebarBtns" for="#chart"> <i class="fa-solid fa-chart-simple icon side-icon"></i><span
-                    id="name-display">Chart</span></button>
-            <button class="sidebarBtns" for="#icons"><i class="fa-solid fa-icons side-icon"></i><span
-                    id="name-display">Icons</span></button>
-            <button class="sidebarBtns" for="#calender"><i class="fa-solid fa-calendar-days  side-icon"></i><span
-                    id="name-display">Calender</span></button>
-            <button class="sidebarBtns" for="#autho"><i class="fa-solid fa-user-shield side-icon"></i><span
-                    id="name-display">Authentication</span></button>
-            <button class="sidebarBtns" for="#pages"><i class="fa-solid fa-file side-icon"></i><span
-                    id="name-display">Pages</span></button>
-            <button class="sidebarBtns" for="#user"><i class="fa-solid fa-user side-icon"></i><span
-                    id="name-display">User</span></button>
-            <button class="sidebarBtns" for="#setting"><i class="fa-solid fa-gear side-icon"></i><span
-                    id="name-display">Setting</span></button>
+            <!-- Content -->
+            <div id="content">
+                <!-- nav -->
+                <div id="navbar">
+                    <div id="hember">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- profile -->
+
+                    <div id="links">
+
+                        <div class="dropdown">
+                            <button class="dropdownBtn"><i class="fa-solid fa-link"></i> Quick Links <i
+                                    class="fa-solid fa-caret-down"></i> </button>
+                            <div class="dropdown-content">
+                                <a href="#"> <i class="fa-regular fa-list"></i> Acces Log</a>
+                                <a href="#"> <i class="fa-solid fa-database"></i> Back Ups</a>
+                                <a href="#"> <i class="fa-solid fa-cloud-arrow-down"></i> Updates</a>
+                                <a href="#"> <i class="fa-solid fa-user-tie"></i> Roles</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropdownBtn"> <i class="fa-solid fa-user"></i> Komal Patel <i
+                                    class="fa-solid fa-caret-down"></i> </button>
+                            <div class="dropdown-content">
+                                <a href="#"> <i class="fa-solid fa-address-card"></i> Profile</a>
+                                <a href="#"> <i class="fa-solid fa-message"></i> Message</a>
+                                <a href="#"> <i class="fa-solid fa-gear"></i> Setting</a>
+                                <a href="#"> <i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- profile over-->
+
+                <!-- dashboard -->
+
+                <div class="display">
+                    <div id="dashboard">
+                        <h2>Dashboard</h2>
+                        <div id="dashboard-box-1">
+
+                            <div id="dash-1">
+                                <div id="dash-main">
+                                    <div id="dash-2">
+                                        <p class="cart"><i class="fa fa-shopping-cart dash-icon" aria-hidden="true"></i>
+                                        </p>
+                                    </div>
+                                    <div id="dash-3">
+                                        <p>New Order</p>
+                                        <span class="count">6267</span>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="foter"> <i class="fa-solid fa-arrow-rotate-right"></i> Update Every 30 Mins </p>
+                            </div>
+
+                            <div id="dash-1">
+                                <div id="dash-main">
+                                    <div id="dash-2">
+                                        <p class="cart"><i class="fas fa-money-bill-alt  dash-icon"
+                                                style="color: #46ec70;"></i> </p>
+                                    </div>
+                                    <div id="dash-3">
+                                        <p>Revenue</p>
+                                        <span class="count">180900</span>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="foter"> <i class="fa-solid fa-calendar"></i> In This Month </p>
+                            </div>
+
+                            <div id="dash-1">
+                                <div id="dash-main">
+                                    <div id="dash-2">
+                                        <p class="cart"><i class="fa-solid fa-eye  dash-icon" style="color: #7f00ff;"></i>
+                                        </p>
+                                    </div>
+                                    <div id="dash-3">
+                                        <p> Page View</p>
+                                        <span class="count">28210</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="foter"> <i class="fa-solid fa-stopwatch"></i> In Last 24 Hrs </p>
+                            </div>
+
+                            <div id="dash-1">
+                                <div id="dash-main">
+                                    <div id="dash-2">
+                                        <p class="view"> <i class="fa-solid fa-envelope  dash-icon"
+                                                style="color:orange;"></i> </p>
+                                    </div>
+                                    <div id="dash-3">
+                                        <p>Support Request</p>
+                                        <span class="count">75</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="foter"> <i class="fa-solid fa-envelope-open-text"></i> Active In The Last 7 Days
+                                </p>
+                            </div>
+                        </div>
+                        <!-- chart -->
+                        <div id="dashboard-chart">
+                            <div id="chart-db"></div>
+                            <div id="chart-db-1"></div>
+                        </div>
+                        <div class="dashbord-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1885593783954!2d72.92978837183666!3d20.94494154798393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e0!3m2!1sen!2sin!4v1715610436130!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+
+                    <div id="forms">
+                        <h2>Forms</h2>
+                        <form action="">
+                            <h3>Basic Forms</h3>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+                            <label>Email</label>
+                            <input type="email" placeholder="Email Address" required>
+
+                            <label>Password</label>
+                            <input type="password" placeholder="Password">
+
+                            <button type="submit" class="form-btn">Submit</button>
+                        </form>
+                        <!-- forms end -->
+
+                    </div>
+
+                    <!-- table strat -->
+                    <div id="table">
+                        <h2>Table</h2>
+                        <table>
+                            <!-- <h3>Basic Table</h3> -->
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td> Mark</td>
+                                    <td> Otto</td>
+                                    <td> @mdo</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- table end -->
+                    <div id="chart">
+                        <h2 class="chart-heading">Chart</h2>
+                        <br>
+                        <h5>Line chart</h5>
+                        <div class="chat-display"><canvas id="acquisitions1"></canvas></div>
+                        <h5>Bar chart</h5>
+                        <div class="chat-display"><canvas id="acquisitions"></canvas></div>
+                        <h5>Doughnut</h5>
+                        <div class="chat-display"><canvas id="acquisitions2"></canvas></div>
+                        <h5>Radar Chart</h5>
+                        <div class="chat-display"><canvas id="acquisitions3"></canvas></div>
+                    </div>
+                    <div id="icons">
+                        <h2>Icons</h2>
+
+                        <img class="side-img" src="Screenshot_1.png" alt="" srcset="">
+
+
+                    </div>
+
+                    <div id="calender">
+                        <h2>Calender</h2>
+                        <div id="calendar-1" style="height: 400px; width: 400px;"></div>
+                    </div>
+                    <div id="autho">
+                        <h2>Authentication</h2>
+                        <!-- <h1>Authentication</h1> -->
+                        <div class="login">
+                            <img class="login-img"
+                                src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
+                                alt="" srcset="">
+                            <h3 class="login-heading">Sign in to your account</h3>
+                            <input class="login-input" type="email" placeholder="Email" required><br>
+                            <input class="login-input" type="password" placeholder="Password">
+                            <div class="checkbox">
+                                <input class="login-cheackbox" type="checkbox" name="" id="">
+                                <label for="" id="remem1">remember me</label>
+                            </div>
+                            <button type="submit" class="autho-btn">Login</button> <br>
+                            <!-- <span id="Reset">Forget password? <a href="">Reset</a></span> -->
+                        </div>
+
+
+                    </div>
+                    <div id="pages">
+                        <h2>Pages</h2>
+                        <img src="page.png" alt="" class="side1-img">
+                    </div>
+                    <div id="user">
+                        <h2>User</h2>
+                        <img src="Screenshot_2.png" alt="" class="side-img">
+
+                    </div>
+                    <div id="setting">
+                        <h2>Setting</h2>
+                        <img src="setting.png" alt="" class="side-img">
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <!-- sidebar over -->
-
-        <!-- Content -->
-        <div id="content">
-            <!-- nav -->
-            <div id="navbar">
-                <div id="hember">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <!-- profile -->
-
-                <div id="links">
-
-                    <div class="dropdown">
-                        <button class="dropdownBtn"><i class="fa-solid fa-link"></i> Quick Links <i
-                                class="fa-solid fa-caret-down"></i> </button>
-                        <div class="dropdown-content">
-                            <a href="#"> <i class="fa-regular fa-list"></i> Acces Log</a>
-                            <a href="#"> <i class="fa-solid fa-database"></i> Back Ups</a>
-                            <a href="#"> <i class="fa-solid fa-cloud-arrow-down"></i> Updates</a>
-                            <a href="#"> <i class="fa-solid fa-user-tie"></i> Roles</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <button class="dropdownBtn"> <i class="fa-solid fa-user"></i> Komal Patel <i
-                                class="fa-solid fa-caret-down"></i> </button>
-                        <div class="dropdown-content">
-                            <a href="#"> <i class="fa-solid fa-address-card"></i> Profile</a>
-                            <a href="#"> <i class="fa-solid fa-message"></i> Message</a>
-                            <a href="#"> <i class="fa-solid fa-gear"></i> Setting</a>
-                            <a href="#"> <i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- profile over-->
-
-            <!-- dashboard -->
-
-            <div class="display">
-                <div id="dashboard">
-                    <h2>Dashboard</h2>
-                    <div id="dashboard-box-1">
-
-                        <div id="dash-1">
-                            <div id="dash-main">
-                                <div id="dash-2">
-                                    <p class="cart"><i class="fa fa-shopping-cart dash-icon" aria-hidden="true"></i>
-                                    </p>
-                                </div>
-                                <div id="dash-3">
-                                    <p>New Order</p>
-                                    <span class="count">6267</span>
-
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="foter"> <i class="fa-solid fa-arrow-rotate-right"></i> Update Every 30 Mins </p>
-                        </div>
-
-                        <div id="dash-1">
-                            <div id="dash-main">
-                                <div id="dash-2">
-                                    <p class="cart"><i class="fas fa-money-bill-alt  dash-icon"
-                                            style="color: #46ec70;"></i> </p>
-                                </div>
-                                <div id="dash-3">
-                                    <p>Revenue</p>
-                                    <span class="count">180900</span>
-
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="foter"> <i class="fa-solid fa-calendar"></i> In This Month </p>
-                        </div>
-
-                        <div id="dash-1">
-                            <div id="dash-main">
-                                <div id="dash-2">
-                                    <p class="cart"><i class="fa-solid fa-eye  dash-icon" style="color: #7f00ff;"></i>
-                                    </p>
-                                </div>
-                                <div id="dash-3">
-                                    <p> Page View</p>
-                                    <span class="count">28210</span>
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="foter"> <i class="fa-solid fa-stopwatch"></i> In Last 24 Hrs </p>
-                        </div>
-
-                        <div id="dash-1">
-                            <div id="dash-main">
-                                <div id="dash-2">
-                                    <p class="view"> <i class="fa-solid fa-envelope  dash-icon"
-                                            style="color:orange;"></i> </p>
-                                </div>
-                                <div id="dash-3">
-                                    <p>Support Request</p>
-                                    <span class="count">75</span>
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="foter"> <i class="fa-solid fa-envelope-open-text"></i> Active In The Last 7 Days
-                            </p>
-                        </div>
-                    </div>
-                    <!-- chart -->
-                    <div id="dashboard-chart">
-                        <div id="chart-db"></div>
-                        <div id="chart-db-1"></div>
-                    </div>
-                    <div class="dashbord-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1885593783954!2d72.92978837183666!3d20.94494154798393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7e5f66c0a35%3A0xf05084bad10b7748!2sRed%20%26%20White%20Multimedia%20Education%20-%20Navsari!5e0!3m2!1sen!2sin!4v1715610436130!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                    </div>
-                </div>
-
-                <div id="forms">
-                    <h2>Forms</h2>
-                    <form action="">
-                        <h3>Basic Forms</h3>
-                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
-                        <label>Email</label>
-                        <input type="email" placeholder="Email Address" required>
-
-                        <label>Password</label>
-                        <input type="password" placeholder="Password">
-
-                        <button type="submit" class="form-btn">Submit</button>
-                    </form>
-                    <!-- forms end -->
-
-                </div>
-
-                <!-- table strat -->
-                <div id="table">
-                    <h2>Table</h2>
-                    <table>
-                        <!-- <h3>Basic Table</h3> -->
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>User Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td> Mark</td>
-                                <td> Otto</td>
-                                <td> @mdo</td>
-
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- table end -->
-                <div id="chart">
-                    <h2 class="chart-heading">Chart</h2>
-                    <br>
-                    <h5>Line chart</h5>
-                    <div class="chat-display"><canvas id="acquisitions1"></canvas></div>
-                    <h5>Bar chart</h5>
-                    <div class="chat-display"><canvas id="acquisitions"></canvas></div>
-                    <h5>Doughnut</h5>
-                    <div class="chat-display"><canvas id="acquisitions2"></canvas></div>
-                    <h5>Radar Chart</h5>
-                    <div class="chat-display"><canvas id="acquisitions3"></canvas></div>
-                </div>
-                <div id="icons">
-                    <h2>icons</h2>
-
-                    <img class="side-img" src="Screenshot_1.png" alt="" srcset="">
-
-
-                </div>
-
-                <div id="calender">
-                    <h2>Calender</h2>
-                    <div id="calendar-1" style="height: 400px; width: 400px;"></div>
-                </div>
-                <div id="autho">
-                    <h2>Authentication</h2>
-                    <!-- <h1>Authentication</h1> -->
-                    <div class="login">
-                        <img class="login-img"
-                            src="https://www.jqueryscript.net/demo/dashboard-admin-template-bootstrap/assets/img/bootstraper-logo.png"
-                            alt="" srcset="">
-                        <h3 class="login-heading">Sign in to your account</h3>
-                        <input class="login-input" type="email" placeholder="Email" required><br>
-                        <input class="login-input" type="password" placeholder="Password">
-                        <div class="checkbox">
-                            <input class="login-cheackbox" type="checkbox" name="" id="">
-                            <label for="" id="remem1">remember me</label>
-                        </div>
-                        <button type="submit" class="autho-btn">Login</button> <br>
-                        <span id="Reset">Forget password? <a href="">Reset</a></span>
-                    </div>
-
-
-                </div>
-                <div id="pages">
-                    <h2>Pages</h2>
-                    <img src="page.png" alt="" class="side1-img">
-                </div>
-                <div id="user">
-                    <h2>User</h2>
-                    <img src="Screenshot_2.png" alt="" class="side-img">
-
-                </div>
-                <div id="setting">
-                    <h2>Setting</h2>
-                    <img src="setting.png" alt="" class="side-img">
-                </div>
-
-
-
-
-
-
-
-            </div>
-
-        </div>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
-            integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="./dist/calendar.js"></script>
-
-        <script src="./jquery.easing.js"></script>
-
-        <script src="./counter.js"></script>
-
-        
-
-        <script src="./script.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="jquery.easing.js"></script>
-        <script src="./counter.js"></script>
-        <script src="./dist/calendar.js"></script>
-        <script src="./script.js"></script>        -->
-
-
-</body>
-
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+                    integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                <script src="./jquery.easing.js"></script>
+                <script src="./counter.js"></script>
+                <script src="./dist/calendar.js"></script>
+                <script src="./script.js"></script>
+               
+    </body>
 </html>
